@@ -4,7 +4,7 @@ import {
   JoinType,
   loadNativeClipperLibInstanceAsync,
   NativeClipperLibRequestedFormat,
-} from '../node_modules/js-angusj-clipper/universal/index';
+} from 'js-angusj-clipper';
 import { toLoop, toXYLoop, toXYShape, toShape } from './helpers';
 import './types';
 export * from './helpers';
