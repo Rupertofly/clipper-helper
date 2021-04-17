@@ -25,13 +25,13 @@ class clipperHelper {
     let xySp = toXYShape(sp, this.res);
     const output = ci.offsetToPaths({
       delta: dist * this.res,
-      offsetInputs: [
-        {
-          data: xySp,
-          endType: EndType.ClosedPolygon,
-          joinType: JoinType.Square,
-        },
-      ],
+      cleanDistance: 0,
+      miterLimit: 4,
+      offsetInputs: xySp.map((sp) => ({
+        data: sp,
+        endType: EndType.ClosedPolygon,
+        joinType: JoinType.Square,
+      })),
     });
     return toShape(output, this.res);
   }
@@ -40,6 +40,8 @@ class clipperHelper {
     let xyLp = toXYLoop(lp, this.res);
     const output = ci.offsetToPaths({
       delta: dist * this.res,
+      cleanDistance: 0,
+      miterLimit: 4,
       offsetInputs: [
         {
           data: xyLp,
