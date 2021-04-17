@@ -1,6 +1,6 @@
 {
   "name": "@rupertofly/clipper-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A helper library for using clipper functions with more standard forms",
   "main": "dist/index.js",
   "repository": "git@github.com:Rupertofly/clipper-helper.git",
