@@ -1,0 +1,22 @@
+{
+  "name": "clipper-helper",
+  "version": "1.0.0",
+  "description": "A helper library for using clipper functions with more standard forms",
+  "main": "dist/index.js",
+  "repository": "git@github.com:Rupertofly/clipper-helper.git",
+  "author": "Ruby Quail <ruby@rubyquail.design>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "js-angusj-clipper": "^1.1.1"
+  },
+  "scripts": {
+    "prepublish": "tsc",
+    "build": "tsc"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true
+  }
+}
