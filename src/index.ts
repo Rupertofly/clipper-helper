@@ -7,6 +7,7 @@ import {
 } from '../node_modules/js-angusj-clipper/universal/index';
 import { toLoop, toXYLoop, toXYShape, toShape } from './helpers';
 import './types';
+export * from './helpers';
 class clipperHelper {
   clipperInstance?: ClipperLibWrapper;
   res: number;
@@ -50,8 +51,10 @@ class clipperHelper {
     return toLoop(output[0], this.res);
   }
 }
+export type ClipperHelper = clipperHelper;
 export async function newClipperHelper(res = 1000) {
   let cl = new clipperHelper(res);
   await cl.setup();
   return cl;
 }
+export default newClipperHelper;

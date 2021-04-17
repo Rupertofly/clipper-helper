@@ -1,5 +1,5 @@
 {
-  "name": "clipper-helper",
+  "name": "@rupertofly/clipper-helper",
   "version": "1.0.0",
   "description": "A helper library for using clipper functions with more standard forms",
   "main": "dist/index.js",
@@ -7,6 +7,8 @@
   "author": "Ruby Quail <ruby@rubyquail.design>",
   "license": "MIT",
   "private": false,
+  "type": "module",
+  "types": "dist/index.d.ts",
   "dependencies": {
     "js-angusj-clipper": "^1.1.1"
   },
